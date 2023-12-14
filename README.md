@@ -1,1 +1,1 @@
-# Investing
+# Investing strategy development with partner
