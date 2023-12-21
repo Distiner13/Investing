@@ -34,7 +34,7 @@ plt.rc("grid", linestyle="--")
 # %%
 
 # Download historical data using yfinance
-symbol = 'AAPL'
+symbol = 'TSLA'
 start_date = '2020-10-01'
 end_date = '2023-11-13'
 Data = yf.download(symbol, start=start_date, end=end_date)
