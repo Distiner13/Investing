@@ -58,7 +58,7 @@ rsi_overBought = 65
 bollinger_std = 2
 
 # Download historical data using yfinance
-symbol = 'TTGT'
+symbol = 'AAPL'
 start_date = '2022-10-01'
 end_date = '2023-08-13'
 data = yf.download(symbol, start=start_date, end=end_date)

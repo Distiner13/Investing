@@ -1,3 +1,4 @@
+#%%
 import yfinance as yf
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -43,7 +44,7 @@ def calculate_rsi(data, window):
     return rsi
 
 ###################################################################################
-ticker = 'GPRO'
+ticker = 'AAPL'
 company = yf.download(ticker, start='2019-01-01', end='2023-08-25')
 ###################################################################################
 # Calculate the 10-month SMA

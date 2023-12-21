@@ -1,3 +1,7 @@
+#%%
+
+
+###########################
 import pandas as pd
 
 def Rewrite(string):
