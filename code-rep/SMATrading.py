@@ -1,3 +1,8 @@
+'''
+Simulation of a simple strategy based on technical analysis
+(Functional, for now)
+'''
+
 #%%
 import yfinance as yf
 import pandas as pd

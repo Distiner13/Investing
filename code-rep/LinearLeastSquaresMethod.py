@@ -1,6 +1,10 @@
 """
-Coupled AR model of temperature and demand consumption.
+Coupled AR model of Open and close prices of a stock to try and predict next day's prices based on previous 2 days.
+(Functional, for now)
+'''
 
+
+'''
 2023/10/17
 Junha Yoo, modified by James Richard Forbes
 

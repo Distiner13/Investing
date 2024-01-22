@@ -1,5 +1,9 @@
 #%%
+'''
+comparison tables was made prior to wieghtedtables and helps parse the data we get from finviz, not sure if it's being used
 
+(NOT Functional, for now)
+'''
 
 ###########################
 import pandas as pd

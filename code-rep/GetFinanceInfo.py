@@ -1,3 +1,8 @@
+'''
+This scrapes the financial information of one company from finviz
+(Functional, for now)
+'''
+
 import requests
 import collections
 collections.Callable = collections.abc.Callable

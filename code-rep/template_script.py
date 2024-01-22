@@ -1,3 +1,8 @@
+'''
+similar to temp_script, this is used as an actual template
+DO NOT MODIFY THIS, it's an example
+'''
+
 #%%
 # template_script.py
 

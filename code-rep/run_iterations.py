@@ -1,3 +1,13 @@
+'''
+This was meant to facilitate the repition process of contniously running a single file manually,
+you can pretty much use this to run the same program multiple times using a different value
+for instance, you can run the LLS program wiyth different stock prices manually or modify it to 
+use this program below and automate the repetition (incomplete and needs to make modifications to all other programs)
+
+(NOT Functional, for now)
+'''
+
+
 #%%
 # run_iterations.py
 

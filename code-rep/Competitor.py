@@ -1,3 +1,9 @@
+'''
+Table containing all the competitors names and their metrics from finviz using panda.read_html\
+    
+(NOT Functional, for now)
+'''
+
 #%%
 import re
 import requests

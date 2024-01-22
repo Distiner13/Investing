@@ -1,3 +1,8 @@
+'''
+This was made to test out the technical trading stategy
+(Functional, for now)
+'''
+
 #%%
 import pandas as pd
 import numpy as np

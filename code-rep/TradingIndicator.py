@@ -1,3 +1,10 @@
+
+'''
+This generates buy and sell signals based on our strategy
+(Functional, for now)
+'''
+
+    
 #%%
 import pandas as pd
 import numpy as np

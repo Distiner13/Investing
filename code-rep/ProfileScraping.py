@@ -1,3 +1,8 @@
+'''
+Collects the profiles (not data) of companies from yahoo finance
+(Functional, for now)
+'''
+
 import requests
 import collections
 from sklearn.linear_model import LinearRegression

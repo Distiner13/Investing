@@ -1,3 +1,9 @@
+'''
+This is what other programs should have around them if they want to be compatible
+with 'run_iterations.py', modify this program to fit other shit
+'''
+
+
 #%%
 # template_script.py
 

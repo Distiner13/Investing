@@ -1,3 +1,9 @@
+'''
+uses the technical analysis based technic to evaluate profits from investing in S&P500 companies
+
+(NOT Functional, for now)
+'''
+
 #%%
 import pandas as pd
 import numpy as np

@@ -1,3 +1,9 @@
+'''
+Weighted Tables takes the scores we attrbuted to each metric and gives a score to the companies within a list
+which we get from 'ProfileScraping.py'
+(NOT Functional, for now)
+'''
+
 #%%
 import pandas as pd
 from openpyxl.reader.excel import load_workbook

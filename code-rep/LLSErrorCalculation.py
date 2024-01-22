@@ -1,3 +1,9 @@
+'''
+non-functional multipletest for S&P500 companies using LLS to try and get average error 
+
+(NOT Functional, for now)
+'''
+
 #%%
 # Import libraries
 import numpy as np
