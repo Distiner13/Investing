@@ -1,13 +1,22 @@
 #%%
 '''
-comparison tables was made prior to wieghtedtables and helps parse the data we get from finviz, not sure if it's being used
+comparison tables helps correct the data we get from finviz into numerical values usable on pd df.
+This program also runs an analysis on the companies using their metrics to rank them by score.
+the result is rendered in a pd df called Final Table = 'merged_df'
 
-(NOT Functional, for now)
+(Functional, for now)
 '''
 
-###########################
 import pandas as pd
 
+'''
+The rewrite function takes in a string from the extracted data
+and converts the strings to usuable format.
+i.e
+10B --> 10^9
+
+This is done so that our values are usable within a pandas dataframe
+'''
 def Rewrite(string):
     if isinstance(string, str):
         try:
@@ -36,20 +45,31 @@ def Rewrite(string):
     else:
         return string
 
+'''
+So we have a bunch of data inputs from finviz and each column represents a
+metric, they are separated into value and momentum for clear stock grading
+
+DO NOT CHANGE THESE VALUES UNLESS YOU WANNA REWORK FINFIZ IN ITS ENTIRETY
+'''
+
 def RunComparisonTables():
     IncreaseIsGood = [1, 15, 16, 19, 20, 21, 22, 23, 24, 25, 27, 28, 33, 41, 42, 43, 44, 45, 48,
         49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 76]
     IncreaseIsBad = [1, 8, 9, 10, 11, 12, 13, 14, 46, 47, 68]
 
+    #value investing metrics
     ValueArr = [8, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 27, 28, 33, 41, 42, 43, 44, 45, 46, 47,
                 48, 49, 50]
+    #value unvesting metrics weights
     ValueWeight = [1.428571429, 1.428571429, 1.428571429, 1.428571429, 1.428571429, 1.428571429, 1.428571429, 5, 5, 7.333333333, 0.2, 0.2, 0.8, 0.8, 4, 4, 2, 2, 2, 10, 10, 10, 5, 5, 5, 5, 3.333333333, 3.333333333, 3.333333333]
 
+    #momentum metrics or otherwise, useful in technical analysis
     MomentumArr = [51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 68, 76]
-
+    #weights of momentum metrics
     MomentumWeight = [0.2919708029, 1.167883212, 3.503649635, 7.00729927, 14.01459854, 14.01459854, 8.275862069, 8.275862069,
              0.6896551724, 2.75862069, 1.111111111, 2.777777778, 11.11111111, 15, 10]
 
+    #needs to be taken as input form user
     file_path = "C:/Users/User/Documents/- Desktop _Archive/PL-/Learn/Programming/Finance-Project/Financial-project-main/Financial-project-main/Output.xlsx"
 
     Data = pd.read_excel(file_path, sheet_name='Sheet1')
@@ -98,3 +118,4 @@ def RunComparisonTables():
     print("Final Table: \n", merged_df)
 
 
+RunComparisonTables()

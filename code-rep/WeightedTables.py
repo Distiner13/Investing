@@ -1,7 +1,7 @@
 '''
 Weighted Tables takes the scores we attrbuted to each metric and gives a score to the companies within a list
 which we get from 'ProfileScraping.py'
-(NOT Functional, for now)
+(NOT Functional, for now - works but not the printing onto the excel sheet part)
 '''
 
 #%%
